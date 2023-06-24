@@ -8,11 +8,11 @@ Yelp.search = function(term, location, sortBy) {
     }).then(response => {
         return response.json();
     }).then(jsonResponse => {
-        if (jsonResponse.busineses) {
-            return jsonResponse.busineses.map(business => {
+        if (jsonResponse.businesses) {
+            return jsonResponse.businesses.map(business => {
                 return {
                     id: business.id,
-                    imageSrc: business.imageSrc,
+                    imageSrc: business.image_url,
                     name: business.name,
                     address: business.address,
                     city: business.city,
