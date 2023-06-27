@@ -13,6 +13,7 @@ Yelp.search = function(term, location, sortBy) {
                 return {
                     id: business.id,
                     imageSrc: business.image_url,
+                    url: business.url,
                     name: business.name,
                     address: business.address,
                     city: business.city,
